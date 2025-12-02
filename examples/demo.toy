@@ -1,0 +1,9 @@
+{ printing "Hello from custom_interpreter!" end }
+
+{ let x is 5 in x + x end }                          # 10
+
+{ func add(a, b) a + b , funCall add(15, 2) }        # 17
+
+{ letMut L is lst [1, 2] in listappend 3 in L end }  # [1, 2, 3]
+
+{ slice "Hello, world!" start 0 stop 5 }             # "Hello"
